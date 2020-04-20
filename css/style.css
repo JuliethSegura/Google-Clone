@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Quitar etiqueta de decoracion (subrayado) y agregar manita cursor */
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+
+/* Ubicar los elementos a la derecha */
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-section-derecha {
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Separar los elementos al posicionarlos horizontal */
+
+nav .nav-section-derecha a {
+    margin-right: 10px;
+    color: #000;
+}
+
+
+/* no-repeat (se uso para que la imagen no tratara de ocupar todo el espacio de la pagina, si no el tamaño real)
+contain (aproximar la imagen al tamaño del contenedor)*/
+
+nav .nav-section-derecha .menu-icon {
+    background-image: url(https://static.thenounproject.com/png/756729-200.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-section-derecha img {
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img {
+    width: 400px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dcdcdd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgba(158, 150, 158, 1);
+    ;
+}
+
+
+/*Quitar el borde azul al input */
+
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
